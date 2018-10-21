@@ -44,7 +44,7 @@ def play(my_songs)
   if my_songs.keys.include?(response)
     puts "Playing #{response}"
     #binding.pry
-    system "#{my_songs[response]}"
+    system "start "" #{my_songs[response]}"
   else
     puts "Invalid input, please try again"
   end

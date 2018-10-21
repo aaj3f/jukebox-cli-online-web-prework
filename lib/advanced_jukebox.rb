@@ -43,7 +43,7 @@ def play(my_songs)
   response = gets.chomp
   if my_songs.keys.include?(response)
     puts "Playing #{response}"
-    binding.pry
+    #binding.pry
     system "start #{my_songs[response]}"
   else
     puts "Invalid input, please try again"
